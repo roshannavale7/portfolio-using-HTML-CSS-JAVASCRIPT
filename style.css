@@ -416,10 +416,13 @@ span{
     .portfolio-layer h4{
         font-size:7rem ;
     }
-    /* .footer .footer-icon{
-
-    } */
-    
+    .footer .footer-icon a{
+        width: 10rem;
+        height: 10rem;
+    }
+    .footer-icon a i {
+        font-size: 5rem;
+    }
     
 }
 /* @media (max-width:768px) {
