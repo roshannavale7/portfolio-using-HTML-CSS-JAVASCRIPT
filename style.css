@@ -39,7 +39,7 @@ section{
     padding: 10px; 
     color: black;
     background-color:var(--bg-color);
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;  
@@ -68,8 +68,6 @@ section{
     align-items: center;
     /* color: var(--text-color); */
 }
-
-
 .home-img img{
     height: 30vw;
 }
@@ -134,7 +132,6 @@ span{
     justify-content: center;
     align-items: center;
     gap:4rem;
-    /* color: var(--text-color); */
     background-color: var(--second-bg-color);
     text-align: left;
 }
@@ -149,15 +146,12 @@ span{
 .about-img img{
     width:25vw ;
 }
-
 .about h3{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 .about p{
     font-size: 1.8rem;
-
-    
 }
 /* .services{
     color: var(--text-color);
@@ -172,27 +166,25 @@ span{
 } */
 .services h2{
     margin-top: 0%;
-    /* max-width: 100rem; */
+    /* max-width: 100%; */
 }
 .service-content{
    /* color: var(--text-color); */
    font-size: 1.5rem;
 }
 .service-content i{
-    
     font-size: 5rem;
     color: var(--main-color);
 }
 .service-container{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem; 
-
 }
-.service-container
-.service-content{
+.service-container .service-content{
     flex: 1 1 30rem;
     background-color: var(--second-bg-color);
     border: .1rem solid var(--second-bg-color);
@@ -211,7 +203,7 @@ span{
 }
 .service-container .service-content:hover{
     border-color: var(--main-color);
-    scale: 1.02;
+    /* scale: 1.02; */
 }
 .portfolio{
     background-color: var(--second-bg-color);
@@ -222,8 +214,8 @@ span{
     margin-bottom: 4%;
 }
 .portfolio-container{
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr); */
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
     width: 105%;
     display: flex;
     flex-wrap: wrap;
@@ -288,9 +280,7 @@ span{
     color: var(--second-bg-color);
     padding: 1rem;
 }
-/* .contact{
-    width: 100%;
-} */
+
 .contact h2{
     margin: 0%;
     margin-bottom: 3rem;
@@ -348,7 +338,6 @@ span{
     background: var(--main-color);
     border-radius: 1rem;
     transition: .3 ease;
-
 }
 .footer-icon a:hover{
     box-shadow: 0 0 1rem var(--main-color);
@@ -358,37 +347,87 @@ span{
     color: var(--second-bg-color);
 }
 
-
-
 /* media query for small screen  */
 
 @media (max-width:1200px){
     html{
         font-size: 55%;
-        
     }
-    
 }
 @media(max-width:991px){
-    
     section{
         padding: 10rem 7% 2rem;
     }
     .footer{
         padding: 2rem 3%;
     }
-}
-@media (max-width:768px) {
-    
-     /* .header{
-        /* width: 120%; */
 
-    }   */
-    #menu-icon{
-        display: block;
+    /* for min screen work */
+    .home .btn{
+        margin-left: 0%;
+        text-align: center;
+        width: 35%;
     }
- 
+    .about .btn{
+        margin-left:0% ;
+        text-align: center;
+        width: 35%;
+    }
+    .service-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .service-content{
+        min-height:auto;
+    }
+    .service-content .btn{
+        /* display: block; */
+        width: 70%;
+        /* margin-left: 5%; */
+    }
+    .services h2, .portfolio h2{
+        margin-top:-5% ;
+        padding-top: 0%;
+    }
+    .portfolio-container{
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+        
+    }
+    .portfolio-content img{
+        height: 44rem;
+    }
+    .portfolio-container .portfolio-content{
+        min-width: 100%;
+        height: auto;
+    }
+    .portfolio-layer a{
+        height: 10rem;
+        width: 10rem;
+    }
+    .portfolio-layer a i{
+        font-size: 5rem;
+    }
+    .portfolio-layer p{
+        font-size: 3rem;
+    }
+    .portfolio-layer h4{
+        font-size:7rem ;
+    }
+    /* .footer .footer-icon{
+
+    } */
+    
     
 }
+/* @media (max-width:768px) {
+    .service-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+} */
 
 

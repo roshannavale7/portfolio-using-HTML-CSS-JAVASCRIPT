@@ -379,10 +379,12 @@ span{
     /* .header{
         width: 120%;
     } */
-    #menu-icon{
+    /* #menu-icon{
         display: block;
+    } */
+    .service-content{
+        min-width: 100%;
     }
-    
 }
 
 
