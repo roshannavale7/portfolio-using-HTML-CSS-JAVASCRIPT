@@ -393,14 +393,14 @@ span{
     .portfolio-container{
         display: flex;
         flex-direction: column;
-        min-height: auto;
+        margin-left: -2.5%;
         
     }
     .portfolio-content img{
         height: 44rem;
     }
     .portfolio-container .portfolio-content{
-        min-width: 100%;
+        min-width: 95%;
         height: auto;
     }
     .portfolio-layer a{
