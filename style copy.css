@@ -4,12 +4,11 @@
     --text-color: #fff;
     --main-color: #0ef;
 }
- 
 html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
-body{ 
+body{
     background-color: var(--bg-color);
 
 }
@@ -22,27 +21,24 @@ section{
     text-decoration: none;
     padding: 2rem;
     font-size: 1.5rem;
-    color: var(--text-color); 
+    color: var(--text-color);
+    transition: .3s;
 }
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
 }
-.container{
-    padding: 0;
+.header{
     position: fixed;
     top: 0;
-    left:0; 
-    width:100%;   
-}
-.header{  
-    padding: 10px; 
-    color: black;
-    background-color:var(--bg-color);
-     display: flex;
+    left:0;
+    width: 100vw;
+    padding: 10px;
+    background-color: var(--bg-color);
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;  
+    z-index: 100;
 }
 .header.sticky{
     border-bottom: .1rem solid rgba(0,0,0, .2);
@@ -53,7 +49,6 @@ section{
     color: var(--main-color);
     font-weight: 600;
     cursor: default;
-    padding-left: 12rem;
 }
 #menu-icon{
     color: var(--text-color);
@@ -370,7 +365,9 @@ span{
     
 }
 @media(max-width:991px){
-    
+    .header{
+        padding: 2rem 3%;
+    }
     section{
         padding: 10rem 7% 2rem;
     }
@@ -379,15 +376,12 @@ span{
     }
 }
 @media (max-width:768px) {
-    
-     /* .header{
-        /* width: 120%; */
-
-    }   */
+    /* .header{
+        width: 120%;
+    } */
     #menu-icon{
         display: block;
     }
- 
     
 }
 
