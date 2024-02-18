@@ -12,15 +12,25 @@
 
 <body>
     <div class="container">
-        <div class="header">
-            <a class="logo" href="#">Portfolio</a>
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About me</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+        <div id="header" onclick="showMenu()" class="header">
+            <a class="logo" id="logo" href="#">Portfolio</a>
+            <div class="toggle-btn">
+
+                <input type="checkbox" id="nav-toggle">
+                <label id="nav-toggle-label" for="nav-toggle">
+                    <div id="hamburger"  id="expnad" >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+            </div>
+            <nav  class="navbar" >
+                <a class="nav-link" href="#home" >Home</a>
+                <a class="nav-link" href="#about">About me</a>
+                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </nav>
         </div>
     </div>
@@ -103,7 +113,7 @@
                 <div class="portfolio-layer">
                     <h4>Open Book Library</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, ipsum!</p>
-                    <a href="https://roshannavale7.github.io/Frontend-Project/"><i class='bx bx-link-external' ></i></a>
+                    <a href="https://roshannavale7.github.io/Frontend-Project/"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-content">
@@ -111,7 +121,8 @@
                 <div class="portfolio-layer">
                     <h4>Web Design Using Flex</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, ipsum!</p>
-                    <a href="https://roshannavale7.github.io/Frontend-practise-website-using-flex/"><i class='bx bx-link-external' ></i></a>
+                    <a href="https://roshannavale7.github.io/Frontend-practise-website-using-flex/"><i
+                            class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-content">
@@ -119,7 +130,7 @@
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, ipsum!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-content">
@@ -127,7 +138,7 @@
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, ipsum!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-content">
@@ -135,7 +146,7 @@
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, ipsum!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -144,10 +155,10 @@
                 <div class="portfolio-layer">
                     <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, ipsum!</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
@@ -173,7 +184,7 @@
             <p>Copyright &copy; 2023 by Roshan | All Rights Reserved</p>
         </div>
         <div class="footer-icon">
-            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
     <script src="script.js"></script>
