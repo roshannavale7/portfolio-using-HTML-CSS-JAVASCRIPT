@@ -635,9 +635,10 @@ span {
     
 }
 @media only screen and (max-width:519px) {
-    .image {
+    .home-img  {
         margin-top: -60%;
         transform: scale(1.5);
+        margin-right: 1.5%;
     }
     .home-content p{
         width: 120%;
@@ -646,6 +647,7 @@ span {
     .home-content .btn {
         width: 150%;
     }
+    
 }
 /* @media(max-width:991px){ */
 @media only screen and (max-width:768px) {
@@ -718,7 +720,11 @@ span {
         width: 60%;
         padding: 3%;
     }
-
+    .about-content{
+        margin: 0%;
+        padding: 0%;
+    }
+    
     /* .about .btn {
         margin-left: 0%;
         text-align: center;
@@ -766,8 +772,8 @@ span {
     }
 
     .portfolio-layer a {
-        height: 10rem;
-        width: 10rem;
+        height: 8rem;
+        width: 8rem;
     }
 
     .portfolio-layer a i {
@@ -779,7 +785,8 @@ span {
     }
 
     .portfolio-layer h4 {
-        font-size: 7rem;
+        font-size: 5rem;
+        text-align: center;
     }
 
     .input-box input {
