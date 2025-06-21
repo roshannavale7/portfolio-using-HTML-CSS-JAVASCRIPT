@@ -1,4 +1,6 @@
-
+*{    
+    font-family: system-ui;
+}
 #nav-toggle {
     position: fixed;
     top: 0;
@@ -326,6 +328,8 @@ span {
 .home-content p {
     font-size: 1.8rem;
     font-weight: 200;
+    letter-spacing: 1.5px;
+    font-family: system-ui;
 }
 
 .social-media a {
@@ -367,15 +371,14 @@ span {
 .btn:hover {
     box-shadow: none;
 }
-.about{
+ .about{
     background-color: var(--second-bg-color);
     display: flex;
     flex-direction: column;
-    /* gap: 10%; */
     align-items: center;
     
-
 }
+/*
 .about-container {
     display: flex;
     justify-content: center;
@@ -386,7 +389,6 @@ span {
 
 .about-content {
     margin-left: 5rem;
-    /* margin: 1rem 1rem; */
 }
 
 .about h2 {
@@ -405,7 +407,7 @@ span {
 
 .about p {
     font-size: 1.8rem;
-}
+} */
 
 /* .services{
     color: var(--text-color);
@@ -855,3 +857,95 @@ span {
     
     
 }
+/* About section  */
+.about-section {
+    background: var(--second-bg-color);
+    padding: 60px 20px;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: 5px solid #fff;
+    transition: transform 0.4s ease;
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-content {
+    max-width: 600px;
+  }
+  
+  .about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+    border-left: 5px solid #00ffd5;
+    padding-left: 15px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+  
+  .work-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .work-list li {
+    margin: 10px 0;
+    font-size: 17px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .work-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #00ffd5;
+    font-weight: bold;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: #00ffd5;
+    color: #111;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #00c8aa;
+  }
+  .social-media-contact{
+    text-align: center;
+  }
+  .contact-content{
+    text-align: center;
+    font-size: 20px;
+  }

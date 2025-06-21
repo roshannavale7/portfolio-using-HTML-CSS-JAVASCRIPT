@@ -42,3 +42,5 @@ navLinkActive.forEach(navLinkActive=>{
         navLinkActive.classList.add('active')
     })
 })
+
+// for about transition 
